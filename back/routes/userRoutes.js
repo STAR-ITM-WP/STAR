@@ -17,6 +17,13 @@ const isValidPassword = (password) => {
 router.post('/register', async (req, res) => {
   const { studentNumber, name, password, major } = req.body;
 
+
+  if (studentNumber.length > 11) {
+    return res.status(400).json({
+      message: 'Student number must be 11 characters or less'
+    });
+  }
+  
   if (!isValidPassword(password)) {
     return res.status(400).json({
       message: 'Password must be at least 6 characters and include both letters and numbers'
