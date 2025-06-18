@@ -25,10 +25,10 @@
 }
 
 .purpose-modal h2 {
-  font-size: 23px;       /* 폰트 크기 */
-  font-weight: 650;      /* 굵기: 400=보통, 600=굵게 */
-  margin-bottom: 30px;   /* 아래 여백 */
-  font-family: 'Segoe UI', sans-serif;  /* 폰트 지정 (선택사항) */
+  font-size: 23px;      
+  font-weight: 650;     
+  margin-bottom: 30px;  
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* 필드 라벨 + 셀렉트 */
@@ -81,7 +81,7 @@
   border-radius: 6px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #1E1759; /* 👉 기존 .modal-box와 동일한 색상 */
+  background-color: #1E1759; 
   color: white;
   transition: background-color 0.3s ease;
 }
@@ -95,7 +95,7 @@
   background-color: #151046;
 }
 
-/* ✅ 모바일 대응 */
+/* 모바일 대응 */
 @media (max-width: 600px) {
   .purpose-modal {
     padding: 20px;

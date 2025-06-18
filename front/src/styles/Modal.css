@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 
-/* ✅ 내부 스크롤 컨테이너 */
+/* 내부 스크롤 컨테이너 */
 .modal-content-scrollable {
   overflow-y: auto;
   max-height: 70vh;
@@ -44,12 +44,12 @@
   color: #333;
 }
 
-/* ✅ 크기별 너비 */
+/* 크기별 너비 */
 .modal-small { width: 320px; }
 .modal-medium { width: 460px; }
 .modal-large { width: 600px; }
 
-/* ✅ 공통 모달 내용 구성 요소 */
+/* 공통 모달 내용 구성 요소 */
 .modal-card {
   background: #fff;
   border-radius: 12px;
@@ -131,13 +131,13 @@
   margin-left: 8px;
 }
 
-/* ✅ 애니메이션 */
+/* 애니메이션 */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ✅ 모바일 대응 */
+/* 모바일 대응 */
 @media (max-width: 600px) {
 
   .modal-card {

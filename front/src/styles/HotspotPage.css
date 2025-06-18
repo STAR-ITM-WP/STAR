@@ -20,10 +20,10 @@
     
     box-shadow: 0px 2px 10px rgba(73, 73, 73, 0.141);
   
-    white-space: nowrap;     /* 한 줄로 유지 */
-    overflow: visible;       /* 넘쳐도 잘리지 않음 */
-    text-overflow: unset;    /* 줄임표 안 나옴 */
-    width: auto;             /* 글자 수에 따라 너비 자동 */
+    white-space: nowrap; 
+    overflow: visible;     
+    text-overflow: unset;  
+    width: auto;           
   }
   
   .category-bar .active {
@@ -56,7 +56,7 @@
     width: 100%;
     max-width: 1000px;
     margin: 10px auto 40px;
-    border-bottom: 1px solid #ccc; /* ✔️ 얇은 연한 선 */
+    border-bottom: 1px solid #ccc; 
   }  
  
 
@@ -89,7 +89,7 @@
   }
   
   @media (max-width: 600px) {
-    /* 🔘 카테고리 버튼: 줄 정렬 & 작게 */
+    /* 카테고리 버튼: 줄 정렬 & 작게 */
     .category-bar {
       display: flex;
       flex-wrap: wrap;
@@ -114,14 +114,14 @@
       margin: 8px auto 24px;
     }
   
-    /* 🔥 카드들을 세로로 쌓기 */
+    /* 카드들을 세로 */
     .hotspot-display {
-      flex-direction: column;     /* ⭐ 세로 정렬 */
+      flex-direction: column;   
       align-items: center;
       gap: 24px;
       padding: 0 12px;
       margin: 0 auto;
-      transform: none;            /* 🔥 scale 제거 */
+      transform: none;         
     }
   
     .hotspot-card {
@@ -131,7 +131,7 @@
       padding: 16px;
     }
   
-    /* 🏷️ 폰트 조정 */
+    /* 폰트 조정 */
     .rank {
       font-size: 30px;
     }
@@ -140,7 +140,7 @@
       font-size: 22px;
     }
   
-    /* 📦 버튼 조정 */
+    /*버튼 조정 */
     .hotspot-card button {
       font-size: 13px;
       padding: 6px 10px;

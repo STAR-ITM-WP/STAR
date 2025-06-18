@@ -57,6 +57,9 @@ router.post('/register', async (req, res) => {
 
 // Login
 router.post('/login', async (req, res) => {
+  console.log('🌐 [LOGIN] Request Headers:', req.headers);
+  console.log('📦 [LOGIN] Request Body:', req.body);
+
   const { studentNumber, password } = req.body;
 
   try {

@@ -31,16 +31,16 @@ const HotspotPage = () => {
     try {
       let response;
       if (category === 'Auditorium Size / Large Hall') {
-        response = await axios.get('http://localhost:8080/api/analytics/popular-buildings/by-large-group');
+        response = await axios.get('https://star-isih.onrender.com/api/analytics/popular-buildings/by-large-group');
       } else if (category === 'Study Friendly') {
-        response = await axios.get('http://localhost:8080/api/analytics/popular-buildings/by-purpose?purpose=Study');
+        response = await axios.get('https://star-isih.onrender.com/api/analytics/popular-buildings/by-purpose?purpose=Study');
       } else if (category === 'Meeting & Presentation / Collab Zones') {
-        response = await axios.get('http://localhost:8080/api/analytics/popular-buildings/by-purpose?purpose=Meeting');
+        response = await axios.get('https://star-isih.onrender.com/api/analytics/popular-buildings/by-purpose?purpose=Meeting');
       }
 
       const hotspotData = Array.isArray(response.data) ? response.data : [response.data];
 
-      const allBuildingsRes = await axios.get('http://localhost:8080/api/buildings');
+      const allBuildingsRes = await axios.get('https://star-isih.onrender.com/api/buildings');
       const allBuildings = allBuildingsRes.data.buildings;
 
       const matched = hotspotData.map((item, i) => {
@@ -87,7 +87,7 @@ const HotspotPage = () => {
 
   const handleReserve = async (building) => {
     try {
-      const res = await axios.get(`http://localhost:8080/api/buildings/rooms?buildingNo=${building.id}`);
+      const res = await axios.get(`https://star-isih.onrender.com/api/buildings/rooms?buildingNo=${building.id}`);
       const availableRooms = res.data.rooms.map(room => ({
         room: `Room ${room}`,
         time: '8:00 - 17:50',

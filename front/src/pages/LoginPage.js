@@ -17,7 +17,7 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:8080/api/users/login', form);
+      const res = await axios.post('https://star-isih.onrender.com/api/users/login', form);
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));
       navigate('/'); // ✅ 메인 페이지로 이동

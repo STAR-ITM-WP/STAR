@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/reserve/:building/:roomId" element={<RoomDetailPage />} />
         <Route path="/my-reservation" element={<MyReservationPage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/hotspot" element={<HotspotPage />} /> {/* ✅ 핫스팟 라우트 추가 */}
+        <Route path="/hotspot" element={<HotspotPage />} /> {/* 핫스팟 라우트 추가 */}
       </Routes>
     </Router>
   );
